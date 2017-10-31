@@ -1,0 +1,46 @@
+img{
+	object-fit:cover;
+	height: 200px;
+	width: 300px;
+}
+
+img.img-loaded {
+	animation: load-img .5s ease-in-out;
+}
+
+@keyframes load-img{
+	from{
+		transform: scale(0.1,0.1);
+	}
+	to{
+		transform: scale(1,1);
+	}
+}
+
+@-ms-keyframes load-img{
+	from{
+		-ms-transform: scale(0.1,0.1);
+	}
+	to{
+		transform: scale(1,1);
+		-ms-transform: scale(1,1);
+	}
+}
+
+@-webkit-keyframes load-img{
+	from{
+		-webkit-transform: scale(0.1,0.1);
+	}
+	to{
+		-webkit-transform: scale(1,1);
+	}
+}
+
+@-moz-keyframes load-img{
+	from{
+		-moz-transform: scale(0.1,0.1);
+	}
+	to{
+		-moz-transform: scale(1,1);
+	}
+}

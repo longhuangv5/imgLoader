@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="App">
+	<head>
+		<meta charset="utf-8" />
+		<title>图片懒加载</title>
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+
+	<body ng-controller="mainCtrl">
+		<img ng-loader="{{img}}" />
+	</body>
+	<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/img-loader.js" ></script>
+	<script>
+		var app = angular.module('App', ['imgLoader']);
+		app.controller('mainCtrl',function($scope){
+			$scope.img = 'img/1.jpg';
+		})
+	</script>
+
+</html>
